@@ -170,3 +170,27 @@
 
 **Time Complexity:** O(min(a,b)) | **Space Complexity:** O(1)
 
+---
+
+### 15. Rearrange Array by Sign - [View Solution](rearrangeArray.java)
+**Approach:**
+1. Create a result array of same size as input array
+2. Initialize pos pointer to 0 (for even indices) and neg pointer to 1 (for odd indices)
+3. Iterate through input array using for-each loop
+4. If num > 0, place it at result[pos] and increment pos by 2
+5. If num is negative, place it at result[neg] and increment neg by 2
+
+**Time Complexity:** O(n) | **Space Complexity:** O(n)
+
+---
+## 🚀 Getting Started
+
+1. Clone this repository
+2. Navigate to the JAVA coding directory
+3. Compile any Java file: `javac filename.java`
+4. Run the compiled file: `java filename`
+
+## 📝 Note
+- All solutions include comments explaining the logic
+- Time and space complexity mentioned for each solution
+- Some problems include both brute force and optimized approaches
