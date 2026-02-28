@@ -183,6 +183,19 @@
 **Time Complexity:** O(n) | **Space Complexity:** O(n)
 
 ---
+
+### 16. Stock Buy and Sell (Best Time to Buy and Sell Stock) - [View Solution](StockBuySell.java)
+**Approach:**
+1. Initialize minPrice to Integer.MAX_VALUE and maxProfit to 0
+2. Iterate through prices array using for-each loop
+3. If current price < minPrice, update minPrice with current price
+4. Else if (price - minPrice) > maxProfit, update maxProfit
+5. Return maxProfit as the result
+
+**Time Complexity:** O(n) | **Space Complexity:** O(1)
+
+---
+
 ## 🚀 Getting Started
 
 1. Clone this repository
