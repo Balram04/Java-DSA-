@@ -1,0 +1,55 @@
+// import java.util.*;
+// class Anagram{
+//     public static void main(String[]args){
+//         Scanner sc =new Scanner (System.in);
+//         String str1 =sc.nextLine();
+//         String str2 =sc.nextLine();
+
+//         if(str1.length() !=str2.length()){
+//             System.out.println("Not Anagram ");
+//             break;
+//         }
+//         char[]a =str1.toCharArray();
+//         char[]b =str2.toCharArray();
+//         Arrays.sort(a);
+//         Arrays.sort(b);
+
+//     if(Arrays.equals(a,b)==true){
+//         System.out.println("Anagram");
+//     }else{
+//       System.out.println("Not Anagram");
+//        }
+//     }
+// }
+// //time compleaxity will be o(n log n)
+
+
+//more optmised with TC o(n) and SC o(1) without using sorting method
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String s1 = sc.nextLine();
+        String s2 = sc.nextLine();
+
+        int[] freq = new int[26];
+
+        for (int i = 0; i < s1.length(); i++)
+            freq[s1.charAt(i) - 'a']++;
+
+        for (int i = 0; i < s2.length(); i++)
+            freq[s2.charAt(i) - 'a']--;
+
+        for (int i = 0; i < 26; i++) {
+            if (freq[i] != 0) {
+                System.out.println("Not Anagram");
+                break;
+            }
+        }
+
+        System.out.println("Anagram");
+    }
+}
