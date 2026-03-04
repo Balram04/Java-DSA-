@@ -1,3 +1,4 @@
+// Method 1️⃣ Brute force code with TC o(n^2) and SC o(1)
 // class FirstNonRepeatingChar {
 //     public static void main(String[] args) {
 //         String str = "aabbccdeff";
@@ -17,7 +18,8 @@
 //     }
 // }
 
-// Optimised code with TC o(n) and SC o(1)
+// Method 2️⃣ Optimised code with TC o(n) and SC o(1)
+
 import java.util.*;
 class FirstNonRepeatingChar {
     public static void main(String[] args) {
