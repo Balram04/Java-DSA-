@@ -4,7 +4,7 @@ class CheckOnlyDigit {
         boolean isOnlyDigits = true;
 
         for (int i = 0; i < str.length(); i++) {
-            if (Character.isDigit(str.charAt(i))==false) {
+            if (!Character.isDigit(str.charAt(i))) {
                 isOnlyDigits = false;
                 break;
             }
