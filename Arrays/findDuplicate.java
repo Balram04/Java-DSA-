@@ -1,35 +1,45 @@
-import java.util.Scanner;
 
-public class findDuplicate{
-    public static void main(String[]args){
-        Scanner sc =new Scanner (System.in);
-        System.out.print("Enter the size of array: ");
-        int size =sc.nextInt();
-        int arr[]=new int[size];
-        System.out.println("Enter " + size + " elements:");
-        for(int i=0; i<size; i++){
+import java.util.*;
+
+public class FindDuplicate {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+
+        int[] arr = new int[size];
+
+        for(int i = 0; i < size; i++)
             arr[i] = sc.nextInt();
-        }
-        boolean found = false;
-        int count =0;
-        for(int i=0; i<size; i++){
-            for(int j=i+1; j<size; j++){
+
+        int count = 0;
+
+        for(int i = 0; i < size; i++){
+            for(int j = i + 1; j < size; j++){
                 if(arr[i] == arr[j]){
                     System.out.println(arr[i]);
-                    found = true;
                     count++;
                     break;
                 }
             }
         }
-        if(found){
-             System.out.println("total duplicte elements in the array:"+count);
-       } 
 
-        if(!found){
-            System.out.println("No duplicates found");
+        System.out.println("Total duplicates: " + count);
+    }
+}
+//by using hashset
+import java.util.HashSet;
+import java.util.Scanner;
+class findDuplicate{
+    public static void main(String[]args){
+        int array[]={1,2,3,4,5,6,7,8,9,10,1,2};
+        HashSet<Integer> set = new HashSet<>();
+        for(int num: array){
+            if(set.contains(num)){
+                System.out.println("Duplicate element found: " + num);
+            } else {
+                set.add(num);
+            }
         }
-        
-        sc.close();
     }
 }
