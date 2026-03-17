@@ -1,5 +1,6 @@
 //method 1: Brute Force approach, time complexity O(n^2) and space complexity O(1)
-class SubArraySum{
+
+class SubArrayPrint{
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
         int target = 9;

@@ -1,4 +1,4 @@
-//Subarray with sum = k (Brute Force) tc O(n^2) sc O(1)
+// print all subarrays with sum k (Brute Force) tc O(n^2) sc O(1)
 class SubarrayWithSumk{
     public static void main(String[] args) {
 
