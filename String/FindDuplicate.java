@@ -43,3 +43,22 @@ class FindDuplicate {
         }
     }
 }
+
+//Method 3: using HashSet tc o(n) and sc o(n)
+import java.util.*;
+class FindDuplicate {
+    public static void main(String[] args) {
+
+        String str = "programming";
+
+        HashSet<Character> set = new HashSet<>();
+
+        for(char ch : str.toCharArray()) {
+            if(set.contains(ch)) {
+                System.out.print(ch + " ");
+            } else {
+                set.add(ch);
+            }
+        }
+    }
+}

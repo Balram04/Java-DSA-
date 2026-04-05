@@ -19,3 +19,4 @@ class LongestCommanSubstring {
   System.out.println(result);
     }
 }
+
