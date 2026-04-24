@@ -30,3 +30,6 @@ class InterSection{
            System.out.println(result);
     }
 }
+
+//Time complexity: O(n+m) where n is the length of arr1 and m is the length of arr2. This is because we iterate through both arrays once to populate the HashSet and then check for intersections.
+//Space complexity: O(n) in the worst case, where n is the length of arr

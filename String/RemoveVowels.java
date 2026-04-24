@@ -15,7 +15,7 @@ class RemoveVowels {
             }
         }
     }
-}
+} 
 
 // Method 2️⃣ Using Replace Method
 import java.util.*;
